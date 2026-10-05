@@ -7,14 +7,15 @@ import gmail from "./../assets/gmail.png";
 
 export default function About(){
     return (
-        <Box
-          sx={{
+          <Box
+            sx={{
               minHeight: "100vh",
               backgroundImage: `url(${background})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-          }}
-        >
+              backgroundPosition: "top center",
+              backgroundRepeat: "repeat",
+              backgroundSize: "auto",
+            }}
+          >
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="md:col-span-2 p-10">
               <div className="text-7xl font-serif font-semibold mb-5" style={{color: "#811128"}}>Hi!</div>
