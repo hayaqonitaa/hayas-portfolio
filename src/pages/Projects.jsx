@@ -214,21 +214,28 @@ export default function Projects() {
           CAROUSEL
       ========================================== */}
 
-      <Box
+        <Box
         sx={{
-          flex: 1,
-          minHeight: 0,
-
-          display: "flex",
-          alignItems: "center",
-
-          gap: {
+            flex: {
+            xs: "none",
+            md: 1,
+            },
+            minHeight: {
+            xs: "auto",
+            md: 0,
+            },
+            display: "flex",
+            alignItems: {
+            xs: "flex-start",
+            md: "center",
+            },
+            gap: {
             xs: 1,
             sm: 2,
             md: 4,
-          },
+            },
         }}
-      >
+        >
         {/* ======================================
             LEFT BUTTON
         ====================================== */}
@@ -327,24 +334,27 @@ export default function Projects() {
                 CONTENT GRID
             ================================== */}
 
-            <Box
-              sx={{
-                flex: 1,
-                minHeight: 0,
-
-                display: "grid",
-
-                gridTemplateColumns: {
-                  xs: "1fr",
-                  md: "1fr 1fr",
-                },
-
-                gap: {
-                  xs: 2,
-                  md: 4,
-                },
-              }}
-            >
+                <Box
+                sx={{
+                    flex: {
+                    xs: "none",
+                    md: 1,
+                    },
+                    minHeight: {
+                    xs: "auto",
+                    md: 0,
+                    },
+                    display: "grid",
+                    gridTemplateColumns: {
+                    xs: "1fr",
+                    md: "1fr 1fr",
+                    },
+                    gap: {
+                    xs: 2,
+                    md: 4,
+                    },
+                }}
+                >
               {/* ==================================
                   LEFT
               ================================== */}
@@ -362,24 +372,24 @@ export default function Projects() {
                 ================================== */}
 
                 <Box
-  component="img"
-  src={project.image}
-  alt={project.title}
-  sx={{
-    width: "100%",
+                    component="img"
+                    src={project.image}
+                    alt={project.title}
+                    sx={{
+                        width: "100%",
 
-    height: {
-      xs: "180px",
-      sm: "220px",
-      md: "240px",
-    },
+                        height: {
+                        xs: "180px",
+                        sm: "220px",
+                        md: "240px",
+                        },
 
-    objectFit: "cover",
-    display: "block",
+                        objectFit: "cover",
+                        display: "block",
 
-    backgroundColor: "#eeeeee",
-  }}
-/>
+                        backgroundColor: "#eeeeee",
+                    }}
+                    />
 
                 {/* ==================================
                     DESCRIPTION
@@ -400,7 +410,10 @@ export default function Projects() {
 
                   display: "grid",
 
-                  gridTemplateRows: "repeat(3, 1fr)",
+                  gridTemplateRows: {
+                    xs: "auto",
+                    md: "repeat(3, 1fr)",
+                    },
 
                   gap: {
                     xs: 1.5,
