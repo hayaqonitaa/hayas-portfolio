@@ -1,6 +1,6 @@
 import { Box } from "@mui/material"
 import background from "./../assets/me-bg.png"
-import me from "./../assets/me2.png"
+import me from "./../assets/me3.png"
 import linkedin from "./../assets/linkedin.png";
 import instagram from "./../assets/instagram.png";
 import gmail from "./../assets/gmail.png";
